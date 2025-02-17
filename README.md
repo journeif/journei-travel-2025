@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Journei's International Travel - 2025
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project showcases my international travel journey for 2025. It's a React app that displays various destinations I traveled to, and includes interactive components that change images and content when buttons are clicked.
 
-## Available Scripts
+Overview
 
-In the project directory, you can run:
+In this project:
 
-### `npm start`
+I created a React app that uses multiple child components to display photos from my travels.
+The photos and content dynamically change when buttons are clicked.
+This app includes a YouTube video showcasing my journey.
+The app is built to highlight my travels to five different countries in 2025.
+Countries Traveled:
+- London 
+- Jamaica
+- France
+- Scotland
+- Ireland
+Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Interactive Components: Each destination photo can be cycled through with the press of a button.
+Dynamic Content: The displayed destination name and the background photo change based on user interaction.
+YouTube Video: A video documenting my travels in 2025 is embedded within the app.
+Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project locally, follow these steps:
 
-### `npm test`
+1. Clone the repository
+git clone https://github.com/journeif/journei-travel-2025.git
+cd journei-travel-2025
+2. Install Dependencies
+This project uses Node.js and npm. To install the necessary dependencies, run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+3. Start the development server
+Once the dependencies are installed, you can run the app locally:
 
-### `npm run build`
+npm start
+This will open the app in your browser at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Visit the App
+Navigate to http://localhost:3000 in your browser to see the app in action.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Files
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/App.js
+This is the main parent component that displays the child components for the different destinations I visited.
 
-### `npm run eject`
+src/Child.js
+This is the child component that receives the props (destination photo and name) and displays the content dynamically.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+public/index.html
+Contains the general structure of the HTML page. This file includes the embedded YouTube video and a section for the destination content.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+public/assets/
+This folder contains images for the different destinations I visited. Each image is labeled with its respective destination (e.g., London, Paris, etc.).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+React: A JavaScript library for building user interfaces.
+HTML/CSS: Used for styling and structuring the app.
+YouTube API: Embedded video from my international travel journey.
+Acknowledgements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The images were sourced from my personal travel collection, representing each destination I visited in 2025.
+The YouTube video was created to document my experiences during the trip.
