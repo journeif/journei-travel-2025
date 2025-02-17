@@ -16,6 +16,8 @@ Countries Traveled:
 - France
 - Scotland
 - Ireland
+
+
 Features
 
 Interactive Components: Each destination photo can be cycled through with the press of a button.
