@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Child from './Child';
 
 // Import photos
 import bigben from './assets/bigben.jpeg';
@@ -14,8 +15,6 @@ function Parent() {
 
     // Array of imported photos
     const photos = [bigben, jamaica, london, paris, scotland];
-
-    // Array of destinations
     const destinations = ['London', 'Jamaica', 'London', 'Paris', 'Scotland'];
 
     const changeContentAndPhoto = () => {
@@ -25,34 +24,25 @@ function Parent() {
         setPhotoIndex1(nextIndex1);
         setPhotoIndex2(nextIndex2);
 
-        // Set the content based on the destination of the first photo
+        // Change content dynamically
         setContent("Travelin Man - Mos Def or Travelin Girl - Dwele");
     };
 
     return (
-        <div style={{ padding: '20px' }}>
-            <h2>{content}</h2> {/* Static content title */}
-            <div style={{ display: 'flex' }}>
-                <div>
-                    <img
-                        src={photos[photoIndex1]}
-                        alt={`Destination 1: ${destinations[photoIndex1]}`}
-                        style={{ width: '300px', height: '200px', marginRight: '10px' }}
-                    />
-                    <p>{`Destination 1: ${destinations[photoIndex1]}`}</p>
-                </div>
-                <div>
-                    <img
-                        src={photos[photoIndex2]}
-                        alt={`Destination 2: ${destinations[photoIndex2]}`}
-                        style={{ width: '300px', height: '200px' }}
-                    />
-                    <p>{`Destination 2: ${destinations[photoIndex2]}`}</p>
-                </div>
-            </div>
-            <button onClick={changeContentAndPhoto} style={{ padding: '10px', marginTop: '20px' }}>
-                Explore Another Destination
-            </button>
+        <div style={{ padding: '20px', textAlign: 'center' }}>
+            <h1>{content}</h1>
+            
+            <Child 
+                content={`Destination 1: ${destinations[photoIndex1]}`}
+                photo={photos[photoIndex1]}
+                onContentChange={changeContentAndPhoto}
+            />
+
+            <Child 
+                content={`Destination 2: ${destinations[photoIndex2]}`}
+                photo={photos[photoIndex2]}
+                onContentChange={changeContentAndPhoto}
+            />
         </div>
     );
 }
